@@ -16,7 +16,8 @@ const t_0 = universal(import('../src/pages/404.js'), universalOptions)
 const t_1 = universal(import('../src/pages/about.js'), universalOptions)
 const t_2 = universal(import('../src/pages/blog.js'), universalOptions)
 const t_3 = universal(import('../src/containers/Post'), universalOptions)
-const t_4 = universal(import('../src/pages/index.js'), universalOptions)
+const t_4 = universal(import('../src/pages/emergency.js'), universalOptions)
+const t_5 = universal(import('../src/pages/index.js'), universalOptions)
 
 
 // Template Map
@@ -25,5 +26,6 @@ export default [
 t_1,
 t_2,
 t_3,
-t_4
+t_4,
+t_5
 ]

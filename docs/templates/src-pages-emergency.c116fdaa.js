@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[5],{100:function(n,e,t){"use strict";t.r(e);var a=t(0),c=t.n(a),r=t(56),u=t.n(r);e.default=function(){return c.a.createElement(u.a,null,"Emergency")}}}]);
+//# sourceMappingURL=src-pages-emergency.c116fdaa.js.map

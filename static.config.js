@@ -1,5 +1,12 @@
 import axios from 'axios'
 
+import {
+  createMuiTheme,
+  createGenerateClassName,
+} from '@material-ui/core/styles'
+
+const generateClassName = createGenerateClassName()
+
 export default {
   siteRoot: 'https://www.kenworthy.io',
   paths: {
@@ -8,6 +15,16 @@ export default {
   getSiteData: () => ({
     title: 'React Static',
   }),
+  plugins: [
+    [
+      'react-static-plugin-jss',
+      {
+        providerProps: {
+          generateClassName,
+        },
+      },
+    ],
+  ],
   getRoutes: async () => {
     const { data: posts } = await axios.get(
       'https://jsonplaceholder.typicode.com/posts'
