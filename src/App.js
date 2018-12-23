@@ -7,16 +7,20 @@ import {withStyles} from "@material-ui/core/styles/index";
 import NavBar from "./components/NavBar";
 import bgImage from '../public/background.jpg';
 
-document.body.style.height = '100vh';
-document.body.style.backgroundImage = `url(${bgImage})`;
-document.body.style.backgroundPosition = 'center';
-document.body.style.backgroundRepeat = 'no-repeat';
-document.body.style.backgroundSize = '100% 100%';
+const styles = {
+  root: {
+    height: '100vh',
+    backgroundImage: `url(${bgImage})`,
+    backgroundPosition: 'center',
+    backgroundRepeat: 'no-repeat',
+    backgroundSize: '100% 100%',
+  }
+}
 
 function App(props) {
   const { classes } = props;
   return (
-    <Root>
+    <Root className={classes.root}>
       {/*<NavBar />*/}
         {/*<Link to="/">Home</Link>*/}
         {/*<Link to="/about">About</Link>*/}
@@ -33,4 +37,4 @@ App.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default App;
+export default withStyles(styles)(App);
