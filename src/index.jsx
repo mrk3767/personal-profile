@@ -1,10 +1,9 @@
-import * as ReactDOM from "react-dom";
-import React from "react";
+import * as ReactDOM from "react-dom"
+import React from "react"
+import {App} from "./App"
 
-const root = document.createElement('div');
-root.id = 'root';
-document.body.appendChild(root);
+const root = document.createElement('div')
+root.id = 'root'
+document.body.appendChild(root)
 
-const App = ({name}) => (<div>Hello {name}!</div>);
-
-ReactDOM.render(<App name={'Mike'}/>, root);
+ReactDOM.render(<App name={'Mike'}/>, root)
