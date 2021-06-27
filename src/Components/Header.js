@@ -67,10 +67,10 @@ class Header extends Component {
             <hr />
             <Fade bottom duration={2000}>
               <ul className="social">
-                <a href="http://resume.kenworthy.io/" className="button btn primary" target="_blank">
+                <a href="/resume" className="button btn primary" target="_blank">
                   Resume
                 </a>
-                <a href="http://schedule.kenworthy.io/" className="button btn primary" target="_blank">
+                <a href="/schedule" className="button btn primary" target="_blank">
                   Schedule a meeting
                 </a>
                 {/*<a href={project} className="button btn project-btn">*/}
